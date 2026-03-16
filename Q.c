@@ -82,6 +82,14 @@ int dequeue() {
     }
     return data;
 }
+int peek() {
+    if (isEmpty()) {
+        printf("Queue is empty.\\n");
+        return -1;
+    }
+    return queue_array[front];
+}
+
 
 // Display the elements in the queue
 void display() {
